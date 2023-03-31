@@ -100,6 +100,9 @@ main h3 {
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.nft__blocks {
+    padding-bottom: 80px;
+}
 
 .nft__container {
     padding-top: 30px;
@@ -253,4 +256,22 @@ footer {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
+}
+
+.footer__light {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: rgba(253, 212, 70, 0.5);
+    filter: blur(123.267px);
+}
+
+.light {
+    width: 154px;
+    height: 141px;
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    background: rgba(253, 212, 70, 0.3);
+    filter: blur(38.0988px);
 }
