@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Поиск</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo" class="logo__icon">
+            </a>
+            <div class="burger">
+                <span class="burger__line first__line"></span>
+                <span class="burger__line second__line"></span>
+                <span class="burger__line third__line"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search">
+            <div class="search__container container">
+                <input type="text" class="search__input form-control" placeholder="Поиск..." />
+            </div>
+        </section>
+        <section class="selectors">
+            <div class="selectors__container container">
+                <select class="filter__select selector form-select" aria-label="Default filter">
+                    <option selected>Фильтры</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <select class="sort__select selector form-select" aria-label="Default sort">
+                    <option selected>По умолчанию</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </section>
+        <section class="nft__blocks">
+            <div class="nft__container container"></div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
