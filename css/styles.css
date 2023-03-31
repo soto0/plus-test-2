@@ -184,3 +184,73 @@ main h3 {
     padding: 6px 5px;
     color: black;
 }
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+    align-items: center;
+}
+
+.pagination .nft__page {
+    border-radius: 50%;
+    padding: 5px 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+    border: none;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.pagination .nft__page:hover {
+    background-color: #FDD446;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.pagination .nft__page_arrow {
+    border: none;
+}
+
+.pagination .nft__page_arrow:hover {
+    border: none;
+    box-shadow: none;
+    background-color: unset;
+}
+
+.nft__page_arrow {
+    content: url('../images/arrow.svg');
+}
+
+.left__arrow {
+    transform: rotate(180deg);
+}
+
+footer {
+    background-color: #FDD446;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 20px;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__link {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+}
