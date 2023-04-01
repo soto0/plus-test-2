@@ -36,18 +36,154 @@
         </section>
         <section class="selectors">
             <div class="selectors__container container">
-                <select class="filter__select selector form-select" aria-label="Default filter">
-                    <option selected>Фильтры</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+                <div class="filter">Фильтры</div>
                 <select class="sort__select selector form-select" aria-label="Default sort">
                     <option selected>По умолчанию</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
+                <div class="filter__block">
+                    <p class="filter__title">
+                        Цена
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="price__block">
+                        <div class="price__line"></div>
+                        <div class="price__inputs">
+                            <input type="text" class="price__input price__min" placeholder="500 ₽" />
+                            <div class="input__line"></div>
+                            <input type="text" class="price__input price__min" placeholder="500 ₽" />
+                        </div>
+                    </div>
+                    <p class="categories__title filter__title">
+                        Категории
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="checkboxes__block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_1">
+                            <label class="form-check-label" for="category__check_1">
+                                Премиум
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_2">
+                            <label class="form-check-label" for="category__check_2">
+                                Искусство
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_3">
+                            <label class="form-check-label" for="category__check_3">
+                                Знаменитости
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_4">
+                            <label class="form-check-label" for="category__check_4">
+                                Киберспорт
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_5">
+                            <label class="form-check-label" for="category__check_5">
+                                Благотворительность
+                            </label>
+                        </div>
+                    </div>
+                    <p class="files__title filter__title">
+                        Типы файлов
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="checkboxes__block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="files__check_1">
+                            <label class="form-check-label" for="files__check_1">
+                                Изображения
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="files__check_2">
+                            <label class="form-check-label" for="files__check_2">
+                                Видео
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="files__check_3">
+                            <label class="form-check-label" for="files__check_3">
+                                Аудио
+                            </label>
+                        </div>
+                    </div>
+                    <p class="types__title filter__title">
+                        Типы Типы продаж
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="checkboxes__block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="types__check_1">
+                            <label class="form-check-label" for="types__check_1">
+                                Фикс. цена
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="types__check_2">
+                            <label class="form-check-label" for="types__check_2">
+                                Аукцион активен
+                            </label>
+                        </div>
+                    </div>
+                    <p class="net__title filter__title">
+                        Сеть NFT
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="checkboxes__block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category__check_1">
+                            <label class="form-check-label" for="category__check_1">
+                                ETH
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="net__check_1">
+                            <label class="form-check-label" for="net__check_1">
+                                BNB
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="net__check_2">
+                            <label class="form-check-label" for="net__check_2">
+                                USDC
+                            </label>
+                        </div>
+                    </div>
+                    <p class="rarity__title filter__title">
+                        Редкость
+                        <span class="filter__title_line"></span>
+                    </p>
+                    <div class="checkboxes__block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rarity__check_1">
+                            <label class="form-check-label" for="rarity__check_1">
+                                Уникальная
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rarity__check_2">
+                            <label class="form-check-label" for="rarity__check_2">
+                                Редкая
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rarity__check_3">
+                            <label class="form-check-label" for="rarity__check_3">
+                                Эпическая
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary filter__block_btn">Применить</button>
+                </div>
             </div>
         </section>
         <section class="nft__blocks">

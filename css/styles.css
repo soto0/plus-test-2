@@ -30,6 +30,7 @@ main h3 {
     font-size: 9px;
 }
 
+
 .header__container {
     display: flex;
     align-items: center;
@@ -80,11 +81,14 @@ main h3 {
     display: flex;
     padding-top: 15px;
     gap: 7px;
+    position: relative;
 }
 
-.selectors__container .filter__select {
+.selectors__container .filter {
     min-width: 118px;
     max-width: 118px;
+    background-repeat: no-repeat;
+    background-position: 95px 12px;
     background-image:  url('../images/filter.svg');
 }
 
@@ -93,11 +97,141 @@ main h3 {
     background-size: 13px 9px;
 }
 
-.selectors__container .selector {
+.selectors__container .selector,
+.filter {
     border-radius: 10px;
     font-size: 16px;
     padding: 3px 10px 3px 13px;
     border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.filter__block {
+    display: none;
+    
+}
+
+.filter__block.active {
+    display: block;
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    max-width: 296px;
+    padding: 16px;
+    border-radius: 8.32px;
+    border: 0.83237px solid rgba(0, 0, 0, 0.6);
+    background-color: white;
+}
+
+.filter__title {
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter__title_line {
+    width: 12px;
+    height: 2.5px;
+    background-color: #FDD446;
+}
+
+.price__line {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    height: 1.25px;
+    position: relative;
+    background: #00000099;
+    align-items: center;
+}
+
+.price__line::before {
+    position: absolute;
+    margin-top: 5px;
+    content: url('../images/price__arrow.png');
+}
+
+.price__line::after {
+    margin-top: -5px;
+    position: absolute;
+    right: 0;
+    content: url('../images/price__arrow.png');
+    transform: rotate(180deg);
+}
+
+.price__inputs {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.price__input {
+    color:#00000099;
+    font-size: 13px;
+    font-weight: 400;
+    width: 82px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: solid 0.83px #00000099;
+}
+
+.input__line {
+    width: 25px;
+    height: 0.83px;
+    background-color: #00000099;
+}
+
+
+.categories__title {
+    margin-top: 30px;
+}
+
+.checkboxes__block {
+    margin-top: 20px;
+}
+
+.form-check .form-check-input[type=checkbox] {
+    border-radius: 0;
+    border: 0.83237px solid rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+}
+
+.form-check .form-check-input[type=checkbox]:checked {
+    background-color: white;
+    border: 0.83237px solid rgba(0, 0, 0, 0.5);
+    background-image: url('../images/check.svg');
+}
+
+.form-check-label {
+    color:#00000080;
+}
+
+.form-check .form-check-input[type=checkbox]:checked + .form-check-label {
+    color: black;
+}
+
+
+.files__title,
+.types__title,
+.net__title,
+.rarity__title {
+    margin-top: 50px;
+}
+
+.filter__block .filter__block_btn {
+    margin-top: 83px;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #FDD446;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .nft__blocks {

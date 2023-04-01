@@ -1,4 +1,7 @@
 const nftBlocks = document.querySelector('.nft__container');
+const filterBtn = document.querySelector('.filter');
+const filterBlock = document.querySelector('.filter__block');
+const applyBtn = document.querySelector('.filter__block_btn');
 
 const nftData = [
     {
@@ -116,3 +119,12 @@ nftBlocks.innerHTML = nftData.map(nft => {
         `
     )
 }).join('');
+
+
+filterBtn.addEventListener("click", () => {
+    filterBlock.classList.toggle('active');
+});
+
+applyBtn.addEventListener("click", () => {
+    filterBlock.classList.remove('active');
+});
